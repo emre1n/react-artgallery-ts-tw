@@ -6,8 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Project Steps
 
-Starting the project with Create React App
-Adding [TypeScript](https://create-react-app.dev/docs/adding-typescript).
+### 1 Starting the project with Create React App
+
+#### Adding [TypeScript](https://create-react-app.dev/docs/adding-typescript).
 
 ```bash
 npx create-react-app my-app --template typescript
