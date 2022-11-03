@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import Discover from '../../components/Discover';
 
-import { IArtworkModel } from '../../libs/models/artwork.model';
+import IArtworkModel from '../../libs/models/artwork.model';
 
 const Home = () => {
   const [randomArtwork, setRandomArtwork] = useState<IArtworkModel | null>(
@@ -44,14 +44,7 @@ const Home = () => {
 
   return (
     <>
-      <Discover
-        artwork_id={randomArtwork?.artwork_id}
-        image_id={randomArtwork?.image_id}
-        title={randomArtwork?.title}
-        artist_title={randomArtwork?.artist_title}
-        style_title={randomArtwork?.style_title}
-        image_url={randomArtwork?.image_url}
-      />
+      <Discover artwork={randomArtwork} />
     </>
   );
 };

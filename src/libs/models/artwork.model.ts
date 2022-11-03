@@ -1,4 +1,4 @@
-export interface IArtworkModel {
+export default interface IArtworkModel {
   artwork_id: number;
   image_id: number;
   title: string;

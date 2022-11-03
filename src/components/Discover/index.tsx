@@ -1,15 +1,13 @@
 import React from 'react';
+import ArtworkCard from '../ArtworkCard';
+
+import IArtworkModel from '../../libs/models/artwork.model';
 
 type TProps = {
-  artwork_id?: number;
-  title?: string;
-  artist_title?: string;
-  style_title?: string;
-  image_id?: number;
-  image_url?: string;
+  artwork: IArtworkModel | null;
 };
 
-const Discover = ({ title, artist_title, image_url }: TProps) => {
+const Discover = ({ artwork }: TProps) => {
   return (
     // Section Container
     <div className="flex items-center justify-center h-{600} p-16">
@@ -28,13 +26,7 @@ const Discover = ({ title, artist_title, image_url }: TProps) => {
             </p>
           </div>
           {/* Image, Title, Artist */}
-          <div className="image-wrapper flex flex-col w-6/12 h-96 border overflow-hidden">
-            <img src={image_url} alt={title} className="flex object-fit h-80" />
-            <div className="description p-2">
-              <p className="font-bold">{title}</p>
-              <p>{artist_title}</p>
-            </div>
-          </div>
+          <ArtworkCard artwork={artwork} />
         </div>
       </div>
     </div>
