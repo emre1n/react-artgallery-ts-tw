@@ -43,7 +43,9 @@ const TheCollection = () => {
   return (
     <>
       <Hero />
-      <ArtworkList artworkPage={artworkPage} />
+      <div>
+        <ArtworkList artworkPage={artworkPage} />
+      </div>
     </>
   );
 };

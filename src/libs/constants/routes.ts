@@ -5,6 +5,7 @@ import Auctions from '../../pages/Auctions';
 import CuratedPicks from '../../pages/CuratedPicks';
 import ResidentArtists from '../../pages/ResidentArtists';
 import TheCollection from '../../pages/TheCollection';
+import ArtworkDetails from '../../pages/ArtworkDetails';
 
 type TRoute = {
   path: string;
@@ -65,6 +66,13 @@ const ROUTES: TRouteItem = {
     text: 'The Collection',
     isNavItem: true,
     isFooterItem: true,
+  },
+  ArtworkDetails: {
+    path: '/collection/:id',
+    element: ArtworkDetails,
+    text: '',
+    isNavItem: false,
+    isFooterItem: false,
   },
 };
 

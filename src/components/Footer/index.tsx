@@ -7,8 +7,8 @@ const Footer = () => {
   const _routes = Object.values(ROUTES);
   return (
     // Section Container
-    <div className="fixed bottom-0 w-full">
-      <div className="flex flex-col justify-center h-36 mt-12 bg-slate-100">
+    <div>
+      <div className="flex flex-col justify-center h-36 mt-6 bg-slate-100">
         <div className="flex gap-4 p-4 font-bold text-slate-500 ">
           <ul className="flex gap-4">
             {_routes

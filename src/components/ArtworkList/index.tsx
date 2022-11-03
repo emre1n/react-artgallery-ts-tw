@@ -1,8 +1,12 @@
 import React from 'react';
+import { toPath } from '../../libs/helpers/strings';
+import { Link } from 'react-router-dom';
 
 import IArtworkModel from '../../libs/models/artwork.model';
 
 import ArtworkCard from '../ArtworkCard';
+
+import ROUTES from '../../libs/constants/routes';
 
 type TProps = {
   artworkPage: IArtworkModel[] | null;
@@ -10,11 +14,17 @@ type TProps = {
 
 const ArtworkList = ({ artworkPage }: TProps) => {
   return (
-    <div>
-      <ul>
+    <div className="px-8">
+      <ul className="flex flex-wrap gap-4">
         {artworkPage?.map(artwork => (
           <li key={artwork.artwork_id}>
-            <ArtworkCard artwork={artwork} />
+            <Link
+              to={toPath(ROUTES.ArtworkDetails.path, {
+                id: `${artwork.artwork_id}`,
+              })}
+            >
+              <ArtworkCard artwork={artwork} />
+            </Link>
           </li>
         ))}
       </ul>
