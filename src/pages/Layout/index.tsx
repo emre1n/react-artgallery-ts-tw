@@ -1,15 +1,21 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+
 const Layout = () => {
   return (
-    <div>
+    <div className="layout flex flex-col content-between h-screen">
       <header>
-        <div className="text-3xl font-bold">Navbar will be here</div>
+        <Navbar />
       </header>
       <main>
         <Outlet></Outlet>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

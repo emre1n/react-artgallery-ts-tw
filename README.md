@@ -108,3 +108,7 @@ cats.boris;
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+[TypeScript Documentation](https://www.typescriptlang.org/docs/).
+
+[React Router](https://reactrouter.com/en/main/start/tutorial).
