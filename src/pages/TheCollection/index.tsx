@@ -3,12 +3,14 @@ import { useEffect, useState } from 'react';
 import Hero from '../../components/Hero';
 import ArtworkList from '../../components/ArtworkList';
 
+import { artworkDataModeler } from '../../libs/helpers/artworkDataModeler';
+
 const TheCollection = () => {
   const [artworkPage, setArtworkPage] = useState<[] | null>(null);
 
   const getArtworkPage = async () => {
     const response = await fetch(
-      `https://api.artic.edu/api/v1/artworks?page=${0}`
+      `https://api.artic.edu/api/v1/artworks?page=${3}`
     );
     const result = await response.json();
     const pageData = result.data;
@@ -16,14 +18,7 @@ const TheCollection = () => {
     console.log(pageData);
 
     const artworkPageArray = pageData.map((artwork: any) => {
-      const artworkDetails = {
-        artwork_id: artwork.id,
-        image_id: artwork.image_id,
-        title: artwork.title,
-        artist_title: artwork.artist_title,
-        style_title: artwork.style_title,
-        image_url: `https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg`,
-      };
+      const artworkDetails = artworkDataModeler(artwork);
 
       return artworkDetails;
     });

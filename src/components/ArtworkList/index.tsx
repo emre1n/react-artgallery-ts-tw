@@ -17,10 +17,10 @@ const ArtworkList = ({ artworkPage }: TProps) => {
     <div className="px-8">
       <ul className="flex flex-wrap gap-4">
         {artworkPage?.map(artwork => (
-          <li key={artwork.artwork_id}>
+          <li key={artwork.id}>
             <Link
               to={toPath(ROUTES.ArtworkDetails.path, {
-                id: `${artwork.artwork_id}`,
+                id: `${artwork.id}`,
               })}
             >
               <ArtworkCard artwork={artwork} />

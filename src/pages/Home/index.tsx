@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Discover from '../../components/Discover';
 
 import IArtworkModel from '../../libs/models/artwork.model';
+import { artworkDataModeler } from '../../libs/helpers/artworkDataModeler';
 
 const Home = () => {
   const [randomArtwork, setRandomArtwork] = useState<IArtworkModel | null>(
@@ -23,14 +24,7 @@ const Home = () => {
 
     console.log(singleArtwork);
 
-    const randomArtworkModeled = {
-      artwork_id: singleArtwork.id,
-      image_id: singleArtwork.image_id,
-      title: singleArtwork.title,
-      artist_title: singleArtwork.artist_title,
-      style_title: singleArtwork.style_title,
-      image_url: `https://www.artic.edu/iiif/2/${singleArtwork.image_id}/full/843,/0/default.jpg`,
-    };
+    const randomArtworkModeled = artworkDataModeler(singleArtwork);
 
     setRandomArtwork(randomArtworkModeled);
   };

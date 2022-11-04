@@ -15,7 +15,9 @@ const ArtworkCard = ({ artwork }: TProps) => {
         className="flex object-fit h-80"
       />
       <div className="description p-2">
-        <p className="font-bold">{artwork?.title}</p>
+        <p className="font-bold">
+          {artwork?.title}, {artwork?.date_display}
+        </p>
         <p>{artwork?.artist_title}</p>
       </div>
     </div>
