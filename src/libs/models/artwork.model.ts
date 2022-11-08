@@ -6,4 +6,6 @@ export default interface IArtworkModel {
   style_title: string;
   image_url: string;
   date_display: string;
+  provenance_text: string;
+  classification_titles: string[];
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import Hero from '../../components/Hero';
+import HeroCollection from '../../components/HeroCollection';
 import ArtworkList from '../../components/ArtworkList';
 
 import { artworkDataModeler } from '../../libs/helpers/artworkDataModeler';
@@ -37,7 +37,7 @@ const TheCollection = () => {
 
   return (
     <>
-      <Hero />
+      <HeroCollection />
       <div>
         <ArtworkList artworkPage={artworkPage} />
       </div>

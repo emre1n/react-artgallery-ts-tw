@@ -8,16 +8,15 @@ type TProps = {
 
 const ArtworkCard = ({ artwork }: TProps) => {
   return (
-    <div className="image-wrapper flex flex-col max-w-{300} h-96 border overflow-hidden">
+    <div className="image-wrapper flex flex-col max-w-{300} h-{500} border overflow-hidden">
       <img
         src={artwork?.image_url}
         alt={artwork?.title}
         className="flex object-fit h-80"
       />
       <div className="description p-2">
-        <p className="font-bold">
-          {artwork?.title}, {artwork?.date_display}
-        </p>
+        <p className="font-bold">{artwork?.title}</p>
+        <p className="text-sm italic">{artwork?.date_display}</p>
         <p>{artwork?.artist_title}</p>
       </div>
     </div>

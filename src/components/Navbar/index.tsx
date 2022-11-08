@@ -18,7 +18,7 @@ const Navbar = () => {
           .filter(route => route.isNavItem)
           .map(route => (
             <li
-              className="font-bold text-slate-500 hover:text-black duration-500 p-2 sm:text-sm md:text-base"
+              className="font-bold text-slate-500 hover:text-black duration-500 p-2 text-xs md:text-base"
               key={route.path}
             >
               <Link to={route.path}>{route.text}</Link>

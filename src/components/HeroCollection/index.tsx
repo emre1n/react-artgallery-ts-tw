@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hero = () => {
+const HeroCollection = () => {
   return (
     <div className="flex flex-col p-8">
       <div>
@@ -16,4 +16,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroCollection;

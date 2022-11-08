@@ -26,6 +26,15 @@ const Footer = () => {
         <div className="flex gap-4 pl-4 font-bold text-slate-500 ">
           <p>Copyright &copy; {new Date().getFullYear()}</p>
         </div>
+        <div className="flex text-sm gap-1 pl-4 pb-4 text-slate-500 ">
+          <p>
+            Data and images are sourced from the Art Institute of Chicago API.
+          </p>
+          <p>
+            Please visit their main website here:{' '}
+            <a href="https://www.artic.edu">https://www.artic.edu</a>
+          </p>
+        </div>
       </div>
     </div>
   );
