@@ -37,7 +37,7 @@ const TheCollection = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-8 p-12">
+      <div className="flex flex-col gap-4 px-12 justify-center items-center w-full">
         <HeroCollection />
 
         <div className="flex justify-center items-center gap-4">

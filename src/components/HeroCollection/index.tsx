@@ -9,7 +9,7 @@ const HeroCollection = () => {
       <div>
         <p className="py-8">
           Explore many artworks in the collection from the signature works to
-          lesser-known ones from every corner of the globe.
+          lesser-known ones.
         </p>
       </div>
     </div>

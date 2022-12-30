@@ -13,7 +13,7 @@ const Discover = ({ artwork, isLoading }: TProps) => {
     // Section Container
     <div className="flex items-center justify-between h-full p-8">
       <div className="card p-2 w-11/12 mx-auto">
-        <div className="flex flex-col gap-12 md:flex-row h-[600px]">
+        <div className="flex flex-col gap-12 md:flex-row">
           <div>
             {isLoading ? (
               <span>Loading...</span>
