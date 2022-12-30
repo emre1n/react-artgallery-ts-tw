@@ -10,6 +10,8 @@ const Home = () => {
     null
   );
 
+  const [loading, setLoading] = useState(true);
+
   const getRandomArtwork = async () => {
     const randomPage = Math.trunc(Math.random() * 9785);
     const randomArtwork = Math.trunc(Math.random() * 12);
@@ -23,6 +25,7 @@ const Home = () => {
     const singleArtwork = result.data[randomArtwork];
 
     console.log(singleArtwork);
+    setLoading(false);
 
     const randomArtworkModeled = artworkDataModeler(singleArtwork);
 
@@ -37,9 +40,9 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      <Discover artwork={randomArtwork} />
-    </>
+    <div className="flex justify-center">
+      <Discover artwork={randomArtwork} isLoading={loading} />
+    </div>
   );
 };
 

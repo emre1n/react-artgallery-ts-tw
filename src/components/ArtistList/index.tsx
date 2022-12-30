@@ -9,8 +9,8 @@ type TProps = {
 
 const ArtistList = ({ artistListPage }: TProps) => {
   return (
-    <div>
-      <ul className="gap-4 px-8">
+    <div className="flex flex-col">
+      <ul className="flex flex-wrap gap-4">
         {artistListPage?.map(artist => (
           <li key={artist.id}>
             <ArtistCard artist={artist} />

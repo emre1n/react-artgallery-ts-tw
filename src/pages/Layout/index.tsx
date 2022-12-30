@@ -6,16 +6,10 @@ import Footer from '../../components/Footer';
 
 const Layout = () => {
   return (
-    <div className="layout flex flex-col content-between h-screen">
-      <header>
-        <Navbar />
-      </header>
-      <main>
-        <Outlet></Outlet>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+    <div className="min-h-screen flex flex-col justify-between">
+      <Navbar />
+      <Outlet />
+      <Footer />
     </div>
   );
 };

@@ -112,3 +112,12 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 [TypeScript Documentation](https://www.typescriptlang.org/docs/).
 
 [React Router](https://reactrouter.com/en/main/start/tutorial).
+
+### 5- Implementing `React Lazy Load Image Component`
+
+```bash
+$ npm i --save react-lazy-load-image-component
+npm i --save-dev @types/react-lazy-load-image-component
+```
+
+[React Lazy Load Image Component](https://www.npmjs.com/package/react-lazy-load-image-component).

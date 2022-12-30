@@ -1,4 +1,6 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import IArtworkModel from '../../libs/models/artwork.model';
 
@@ -8,14 +10,16 @@ type TProps = {
 
 const ArtworkCard = ({ artwork }: TProps) => {
   return (
-    <div className="image-wrapper flex flex-col max-w-{300} h-{500} border overflow-hidden">
-      <img
+    <div className="flex flex-col justify-between md:min-w-[340px] border overflow-hidden rounded-2xl shadow-lg h-[600px]">
+      <LazyLoadImage
         src={artwork?.image_url}
         alt={artwork?.title}
-        className="flex object-fit h-80"
+        effect="blur"
+        placeholderSrc={artwork?.image_url}
+        className="flex object-cover object-top h-[450px] min-w-[340px] hover:filter hover:brightness-50 transition-all"
       />
-      <div className="description p-2">
-        <p className="font-bold">{artwork?.title}</p>
+      <div className="p-4">
+        <p className="text-base md:text-xl font-bold">{artwork?.title}</p>
         <p className="text-sm italic">{artwork?.date_display}</p>
         <p>{artwork?.artist_title}</p>
       </div>

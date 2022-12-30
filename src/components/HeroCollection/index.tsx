@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroCollection = () => {
   return (
-    <div className="flex flex-col p-8">
+    <div className="flex flex-col">
       <div>
         <h1 className="text-4xl pt-8 pb-4 border-b-4">THE COLLECTION</h1>
       </div>

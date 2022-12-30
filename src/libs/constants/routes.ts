@@ -43,7 +43,7 @@ const ROUTES: TRouteItem = {
     path: '/auctions',
     element: Auctions,
     text: 'Auctions',
-    isNavItem: true,
+    isNavItem: false,
     isFooterItem: false,
   },
   CuratedPicks: {

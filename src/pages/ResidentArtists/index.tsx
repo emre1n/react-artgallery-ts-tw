@@ -34,7 +34,7 @@ const ResidentArtists = () => {
   }, []);
 
   return (
-    <div>
+    <div className="flex flex-col p-12 gap-8">
       <HeroArtists />
       <ArtistList artistListPage={artistListPage} />
     </div>

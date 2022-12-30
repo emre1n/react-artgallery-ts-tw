@@ -11,7 +11,7 @@ const ArtworkDetail = ({ artworkDetail }: TProps) => {
     // Background Container
     <div className="flex items-start justify-center h-screen">
       {/* Card Container */}
-      <div className="p-4 mx-6 border">
+      <div className="p-4 mx-6 border rounded-2xl shadow-lg">
         {/* Flex Container */}
         <div className="flex">
           {/* Image */}
@@ -22,7 +22,7 @@ const ArtworkDetail = ({ artworkDetail }: TProps) => {
           />
           {/* Content */}
           <div className="p-4 border m-4">
-            <h2 className="font-bold text-xl"> {artworkDetail?.title}</h2>
+            <h2 className="font-bold text-2xl"> {artworkDetail?.title}</h2>
             <p className="block italic text-slate-500 text-sm pb-4">
               {artworkDetail?.date_display}
             </p>
