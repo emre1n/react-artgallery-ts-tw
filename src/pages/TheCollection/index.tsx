@@ -7,7 +7,7 @@ import { artworkDataModeler } from '../../libs/helpers/artworkDataModeler';
 
 const TheCollection = () => {
   const [artworkPage, setArtworkPage] = useState<[] | null>(null);
-  const [pageNumber, setPageNumber] = useState(1);
+  const [pageNumber, setPageNumber] = useState(30);
 
   const getArtworkPage = async () => {
     const response = await fetch(

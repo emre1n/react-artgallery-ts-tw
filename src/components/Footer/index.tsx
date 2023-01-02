@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     // Section Container
     <footer>
-      <div className="flex flex-col justify-center gap-4 h-36 mt-16 px-4 bg-slate-100">
-        <div className="flex gap-4 font-bold text-slate-500 ">
+      <div className="flex flex-col justify-center gap-4 h-44 mt-16 px-4 bg-slate-100">
+        <div className="flex gap-4 font-bold text-slate-500">
           <ul className="flex gap-4">
             {_routes
               .filter(route => route.isFooterItem)

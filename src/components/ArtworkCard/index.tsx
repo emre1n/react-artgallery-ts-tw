@@ -10,8 +10,8 @@ type TProps = {
 
 const ArtworkCard = ({ artwork }: TProps) => {
   return (
-    <div className="flex flex-col justify-between border overflow-hidden rounded-2xl shadow-lg h-[500px]">
-      <picture className="flex justify-center items-start overflow-hidden bg-yellow-500 w-full h-[400px]">
+    <div className="flex flex-col justify-between border overflow-hidden rounded-2xl shadow-lg h-[400px]">
+      <picture className="flex justify-center items-center overflow-hidden  w-[400px] h-[400px]">
         <LazyLoadImage
           src={artwork?.image_url}
           alt={artwork?.title}
