@@ -14,10 +14,10 @@ type TProps = {
 
 const ArtworkList = ({ artworkPage }: TProps) => {
   return (
-    <div className="max-w-[1800px]">
-      <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+    <div className="max-w-[2000px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
         {artworkPage?.map(artwork => (
-          <li key={artwork.id}>
+          <div key={artwork.id}>
             <Link
               to={toPath(ROUTES.ArtworkDetails.path, {
                 id: `${artwork.id}`,
@@ -25,9 +25,9 @@ const ArtworkList = ({ artworkPage }: TProps) => {
             >
               <ArtworkCard artwork={artwork} />
             </Link>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

@@ -11,7 +11,7 @@ const TheCollection = () => {
 
   const getArtworkPage = async () => {
     const response = await fetch(
-      `https://api.artic.edu/api/v1/artworks?page=${pageNumber}`
+      `https://api.artic.edu/api/v1/artworks?page=${pageNumber}&limit=6`
     );
     const result = await response.json();
     const pageData = result.data;
