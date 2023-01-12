@@ -15,7 +15,7 @@ const ArtworkCard = ({ artwork }: TProps) => {
         <img
           src={artwork?.image_url}
           alt={artwork?.title}
-          className="object-cover object-center w-full h-full "
+          className="object-cover object-center w-full h-full"
         />
       </picture>
 
