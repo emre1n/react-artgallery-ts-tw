@@ -8,7 +8,7 @@ type TProps = {
 
 const ArtworkDetail = ({ artworkDetail }: TProps) => {
   return (
-    <div className="flex items-start justify-center h-screen m-8">
+    <div className="flex items-start justify-center m-8">
       <div className="flex flex-col md:flex-row border rounded-2xl shadow-lg">
         <div className="flex justify-center items-center p-4">
           <img
