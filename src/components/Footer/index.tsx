@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     // Section Container
     <footer>
-      <div className="flex flex-col justify-center gap-4 h-44 mt-16 px-4 bg-slate-100">
+      <div className="flex flex-col justify-center gap-4 p-4 bg-slate-100">
         <div className="flex gap-4 font-bold text-slate-500">
           <ul className="flex gap-4">
             {_routes
@@ -26,7 +26,7 @@ const Footer = () => {
         <div className="flex gap-4 font-bold text-slate-500 ">
           <p>Copyright &copy; {new Date().getFullYear()}</p>
         </div>
-        <div className="flex text-sm gap-x-4 pb-4 text-slate-500 ">
+        <div className="flex text-sm gap-x-4 text-slate-500 ">
           <p>
             Data and images are sourced from the Art Institute of Chicago API.
           </p>

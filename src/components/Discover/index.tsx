@@ -11,7 +11,7 @@ type TProps = {
 const Discover = ({ artwork, isLoading }: TProps) => {
   return (
     // Section Container
-    <div className="flex items-center justify-between h-full p-8">
+    <div className="flex items-center justify-between h-full">
       <div className="card p-2 w-11/12 mx-auto">
         <div className="flex flex-col gap-12 md:flex-row">
           <div>
