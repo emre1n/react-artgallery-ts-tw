@@ -26,14 +26,17 @@ const Footer = () => {
         <div className="flex gap-4 font-bold text-slate-500 ">
           <p>Copyright &copy; {new Date().getFullYear()}</p>
         </div>
-        <div className="flex text-sm gap-x-4 text-slate-500 ">
-          <p>
-            Data and images are sourced from the Art Institute of Chicago API.
-          </p>
-          <p>
-            Please visit their main website here:{' '}
-            <a href="https://www.artic.edu">https://www.artic.edu</a>
-          </p>
+        <div className="flex justify-between text-xs gap-x-4 text-slate-500 ">
+          <div className="flex gap-2">
+            <p>
+              Data and images are sourced from the Art Institute of Chicago API.
+            </p>
+            <p>
+              Please visit their main website here:{' '}
+              <a href="https://www.artic.edu">https://www.artic.edu</a>
+            </p>
+          </div>
+          <p className="text-slate-400 italic">v0.1.1</p>
         </div>
       </div>
     </footer>
