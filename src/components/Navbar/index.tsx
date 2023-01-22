@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import ROUTES from '../../libs/constants/routes';
-import Logo from './../../assets/images/logo.png';
+import Logo from './../../assets/images/logoF.png';
 
 const Navbar = () => {
   const _routes = Object.values(ROUTES);
