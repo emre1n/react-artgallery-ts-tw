@@ -3,7 +3,7 @@ import About from '../../pages/About';
 import Contact from '../../pages/Contact';
 import Auctions from '../../pages/Auctions';
 import CuratedPicks from '../../pages/CuratedPicks';
-import ResidentArtists from '../../pages/ResidentArtists';
+import Artists from '../../pages/Artists';
 import TheCollection from '../../pages/TheCollection';
 import ArtworkDetails from '../../pages/ArtworkDetails';
 
@@ -53,10 +53,10 @@ const ROUTES: TRouteItem = {
     isNavItem: true,
     isFooterItem: false,
   },
-  ResidentArtists: {
-    path: '/residentartists',
-    element: ResidentArtists,
-    text: 'Resident Artists',
+  Artists: {
+    path: '/artists',
+    element: Artists,
+    text: 'Artists',
     isNavItem: true,
     isFooterItem: false,
   },

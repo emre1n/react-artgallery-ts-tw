@@ -4,7 +4,7 @@ const HeroArtists = () => {
   return (
     <div className="flex flex-col">
       <div>
-        <h1 className="text-4xl pt-8 pb-4 border-b-4">RESIDENT ARTISTS</h1>
+        <h1 className="text-4xl pt-8 pb-4 border-b-4">ARTISTS</h1>
       </div>
       <div>
         <p className="py-4">
