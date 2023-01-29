@@ -10,7 +10,7 @@ type TProps = {
 
 const ArtworkCard = ({ artwork }: TProps) => {
   return (
-    <div className="flex flex-col border overflow-hidden rounded-2xl shadow-lg h-[360px]  md:h-[460px]  md:w-[320px] w-auto ">
+    <div className="flex flex-col border overflow-hidden rounded-2xl shadow-lg max-w-[460px] h-[360px]  md:h-[460px]  md:w-[320px]">
       <picture className="overflow-hidden h-3/4 ">
         <img
           src={artwork?.image_url}
