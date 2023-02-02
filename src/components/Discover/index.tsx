@@ -10,7 +10,7 @@ type TProps = {
 
 const Discover = ({ artwork, isLoading }: TProps) => {
   return (
-    <div className="flex flex-col gap-12 md:flex-row mx-8">
+    <div className="flex flex-col gap-12 md:flex-row m-8">
       <div className="flex justify-center">
         {isLoading ? (
           <span>Loading...</span>
@@ -18,13 +18,13 @@ const Discover = ({ artwork, isLoading }: TProps) => {
           <ArtworkCard artwork={artwork} />
         )}
       </div>
-      <div className="flex flex-col justify-start md:justify-center max-w-xl md:h-96">
-        <h2 className="items-center text-xl md:text-2xl font-bold p-4">
+      <div className="flex flex-col md:justify-center max-w-xl">
+        <h2 className="text-xl md:text-2xl font-bold">
           Discover the brilliant works of great artists
         </h2>
-        <p className="p-4 text-sm">
-          Buy and sell your artworks on our marketplace or try out an English or
-          a Dutch Auction.
+        <p className="text-sm mt-4">
+          Buy artworks from our art gallery or try out an English or a Dutch
+          Auction.
         </p>
       </div>
     </div>
