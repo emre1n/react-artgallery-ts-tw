@@ -10,7 +10,7 @@ type TProps = {
 
 const Discover = ({ artwork, isLoading }: TProps) => {
   return (
-    <div className="flex flex-col gap-12 md:flex-row m-8">
+    <div className="flex flex-col gap-12 md:flex-row m-4 md:m-8">
       <div className="flex justify-center">
         {isLoading ? (
           <span>Loading...</span>
