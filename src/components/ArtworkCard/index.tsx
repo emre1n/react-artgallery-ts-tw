@@ -19,7 +19,7 @@ const ArtworkCard = ({ artwork }: TProps) => {
         />
       </picture>
       <div className="p-2 w-full h-1/3 overflow-y-auto">
-        <p className="text-base md:text-xl font-bold">{artwork?.title}</p>
+        <p className="text-xl font-bold">{artwork?.title}</p>
         <p className="text-sm italic">{artwork?.date_display}</p>
         <p>{artwork?.artist_title}</p>
       </div>

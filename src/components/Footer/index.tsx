@@ -15,7 +15,7 @@ const Footer = () => {
               .filter(route => route.isFooterItem)
               .map(route => (
                 <li
-                  className="font-bold text-slate-500 hover:text-black duration-500 sm:text-sm md:text-base"
+                  className="font-bold text-slate-500 hover:text-black duration-500 text-xs md:text-base"
                   key={route.path}
                 >
                   <Link to={route.path}>{route.text}</Link>
@@ -36,7 +36,9 @@ const Footer = () => {
               <a href="https://www.artic.edu">https://www.artic.edu</a>
             </p>
           </div>
-          <p className="text-slate-400 italic">v0.1.4</p>
+          <div className="flex items-end">
+            <p className="text-slate-400 italic">v0.1.4</p>
+          </div>
         </div>
       </div>
     </footer>
