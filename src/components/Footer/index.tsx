@@ -36,7 +36,7 @@ const Footer = () => {
               <a href="https://www.artic.edu">https://www.artic.edu</a>
             </p>
           </div>
-          <p className="text-slate-400 italic">v0.1.3</p>
+          <p className="text-slate-400 italic">v0.1.4</p>
         </div>
       </div>
     </footer>
