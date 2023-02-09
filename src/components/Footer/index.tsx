@@ -37,7 +37,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex items-end">
-            <p className="text-slate-400 italic">v0.1.4</p>
+            <p className="text-slate-400 italic">v0.1.5</p>
           </div>
         </div>
       </div>
