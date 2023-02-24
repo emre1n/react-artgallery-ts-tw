@@ -6,7 +6,7 @@ import Footer from '../../components/Footer';
 
 const Layout = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-between">
+    <div className="min-h-screen flex flex-col justify-between gap-8">
       <Navbar />
       <Outlet />
       <Footer />
