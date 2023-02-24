@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import HeroCollection from '../../components/HeroCollection';
+import HeroSection from '../../components/HeroSection';
 import ArtworkList from '../../components/ArtworkList';
 
 import { artworkDataModeler } from '../../libs/helpers/artworkDataModeler';
@@ -38,7 +38,11 @@ const TheCollection = () => {
   return (
     <>
       <div className="flex flex-col gap-8 px-12 justify-center items-center w-full">
-        <HeroCollection />
+        <HeroSection
+          heading="THE COLLECTION"
+          text="Explore many artworks in the collection from the signature works to
+        lesser-known ones."
+        />
 
         <div className="flex justify-center items-center gap-4">
           <button

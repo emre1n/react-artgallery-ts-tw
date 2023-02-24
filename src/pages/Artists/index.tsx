@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { artistDataModeler } from '../../libs/helpers/artistDataModeler';
 
 import ArtistList from '../../components/ArtistList';
-import HeroArtists from '../../components/HeroArtists';
+import HeroSection from '../../components/HeroSection';
 
 const ResidentArtists = () => {
   const [artistListPage, setArtistListPage] = useState<[] | null>(null);
@@ -35,7 +35,12 @@ const ResidentArtists = () => {
 
   return (
     <div className="flex flex-col p-12 gap-8">
-      <HeroArtists />
+      <HeroSection
+        heading="ARTISTS"
+        text="Our resident artists, including abstract painters, conceptual artist,
+        portrait painters, sketch artists, illustrators, digital artists,
+        printmakers, textile artists, glass artists and mixed media artists."
+      />
       <ArtistList artistListPage={artistListPage} />
     </div>
   );
