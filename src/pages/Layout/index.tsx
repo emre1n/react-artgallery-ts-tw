@@ -8,7 +8,9 @@ const Layout = () => {
   return (
     <div className="min-h-screen flex flex-col justify-between gap-8">
       <Navbar />
-      <Outlet />
+      <div className="p-6">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );

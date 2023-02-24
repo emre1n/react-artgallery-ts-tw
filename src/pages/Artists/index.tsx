@@ -34,7 +34,7 @@ const ResidentArtists = () => {
   }, []);
 
   return (
-    <div className="flex flex-col p-12 gap-8">
+    <div className="flex flex-col gap-8">
       <HeroSection
         heading="ARTISTS"
         text="Our resident artists, including abstract painters, conceptual artist,

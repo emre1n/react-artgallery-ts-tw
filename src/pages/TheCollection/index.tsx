@@ -37,7 +37,7 @@ const TheCollection = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-8 px-12 justify-center items-center w-full">
+      <div className="flex flex-col gap-8 justify-center items-center w-full">
         <HeroSection
           heading="THE COLLECTION"
           text="Explore many artworks in the collection from the signature works to

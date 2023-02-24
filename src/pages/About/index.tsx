@@ -3,7 +3,7 @@ import HeroSection from '../../components/HeroSection';
 
 const About = () => {
   return (
-    <div className="flex p-12">
+    <div>
       <HeroSection
         heading="ABOUT"
         text="At One Art, we are providing a space for emerging artists as well as
