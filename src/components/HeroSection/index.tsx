@@ -1,4 +1,5 @@
 import React from 'react';
+import Divider from '../ui/Divider';
 
 type TProps = {
   heading: string;
@@ -7,8 +8,9 @@ type TProps = {
 
 const HeroSection = ({ heading, text }: TProps) => {
   return (
-    <div className="flex flex-col gap-4">
-      <h1 className="text-4xl py-4 border-b-4">{heading}</h1>
+    <div className="flex flex-col gap-4 max-w-[500px]">
+      <h1 className="text-4xl">{heading}</h1>
+      <Divider />
       {text && <p>{text}</p>}
     </div>
   );
