@@ -47,13 +47,13 @@ const TheCollection = () => {
         <div className="flex justify-center items-center gap-4">
           <button
             onClick={() => setPageNumber(pageNumber - 1)}
-            className="h-12 w-28 rounded-full border p-1 enabled:hover:border-black enabled:hover:fill-black enabled:hover:cursor-pointer disabled:opacity-75"
+            className="h-12 w-28 rounded-full border enabled:hover:border-slate-500 enabled:hover:fill-black enabled:hover:cursor-pointer disabled:opacity-75"
           >
             Previous
           </button>
           <button
             onClick={() => setPageNumber(pageNumber + 1)}
-            className="h-12 w-28 rounded-full border p-1 enabled:hover:border-black enabled:hover:fill-black enabled:hover:cursor-pointer disabled:opacity-75"
+            className="h-12 w-28 rounded-full border enabled:hover:border-slate-500 enabled:hover:fill-black enabled:hover:cursor-pointer disabled:opacity-75"
           >
             Next
           </button>

@@ -15,7 +15,7 @@ type TProps = {
 const ArtworkList = ({ artworkPage }: TProps) => {
   return (
     <div className="max-w-[2000px]">
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
         {artworkPage?.map(artwork => (
           <div key={artwork.id}>
             <Link
