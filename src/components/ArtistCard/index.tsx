@@ -34,7 +34,7 @@ const ArtistCard = ({ artist }: TProps) => {
   }, []);
 
   return (
-    <div className="flex p-2 border rounded-2xl shadow-lg w-[300px]">
+    <div className="flex p-2 border rounded-2xl w-[300px]">
       <div>
         <div className="flex justify-center object-cover w-24 h-24 rounded-full  overflow-hidden ">
           <LazyLoadImage
@@ -47,7 +47,7 @@ const ArtistCard = ({ artist }: TProps) => {
       </div>
       <div className="flex flex-col justify-center">
         <div className="flex px-8">{artist.title}</div>
-        <div className="flex text-slate-500 italic">
+        <div className="flex text-slate-500">
           <div className="px-8">
             {artist.birth_date}-{artist.death_date}
           </div>
